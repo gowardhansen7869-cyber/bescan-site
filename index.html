@@ -1,37 +1,341 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>BeScan - Document & PDF Scanner</title>
-<link rel='stylesheet' href='style.css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeScan – Document &amp; PDF Scanner for Android</title>
+<meta name="description" content="BeScan is a fast, secure and offline document &amp; PDF scanner for Android with OCR, PDF merge, split, compress, QR tools and eSign — no account, no uploads.">
+<meta name="keywords" content="BeScan, document scanner, PDF scanner, OCR, image to PDF, merge PDF, split PDF, compress PDF, QR scanner, QR generator, eSign, Android app">
+<meta name="author" content="CG Apps Dev">
+<link rel="canonical" href="https://bescan.site/index.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="BeScan – Document &amp; PDF Scanner">
+<meta property="og:description" content="Fast, secure &amp; offline document scanner for Android. Scan, OCR, merge, split, compress PDFs and more — all on-device.">
+<meta property="og:url" content="https://bescan.site/index.html">
+<meta property="og:site_name" content="BeScan">
+<meta property="og:image" content="https://bescan.site/assets/images/screen-scan.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BeScan – Document &amp; PDF Scanner">
+<meta name="twitter:description" content="Fast, secure &amp; offline document scanner for Android.">
+
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Prevent flash of incorrect theme -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('bescan-theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "BeScan",
+  "operatingSystem": "Android",
+  "applicationCategory": "BusinessApplication",
+  "url": "https://bescan.site",
+  "author": { "@type": "Organization", "name": "CG Apps Dev" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
 </head>
 <body>
-<header>
-<div class='logo'>BeScan</div>
-<nav>
-<a href='index.html'>Home</a>
-<a href='about.html'>About</a>
-<a href='support.html'>Support</a>
-<a href='contact.html'>Contact</a>
-</nav>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary">
+    <a href="index.html" class="brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5a1 1 0 0 1 1-1h3"/><path d="M20 8V5a1 1 0 0 0-1-1h-3"/><path d="M4 16v3a1 1 0 0 0 1 1h3"/><path d="M20 16v3a1 1 0 0 1-1 1h-3"/></svg>
+      </span>
+      BeScan
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
 </header>
 
-<section class='hero'>
-<h1>BeScan</h1>
-<h2>Fast, Secure & Offline Document Scanner</h2>
-<p>Scan documents, create PDFs, OCR text, merge, split and compress PDFs.</p>
-<a class='btn' href='https://play.google.com/store/apps/details?id=com.cgappsdev.bescan'>Download on Google Play</a>
-</section>
+<main id="main">
 
-<section class='features'>
-<div class='card'><h3>📄 Scan</h3><p>High-quality document scanning.</p></div>
-<div class='card'><h3>🔍 OCR</h3><p>Extract text from images.</p></div>
-<div class='card'><h3>📑 PDF Tools</h3><p>Merge, split & compress PDFs.</p></div>
-<div class='card'><h3>📱 QR</h3><p>QR Scanner & Generator.</p></div>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow">Android App</p>
+        <h1>BeScan – Document &amp; PDF Scanner</h1>
+        <p class="subtitle">Fast, Secure &amp; Offline Document Scanner</p>
+        <div class="hero-cta">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.cgappsdev.bescan" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 2.6c-.3.2-.5.6-.5 1v16.8c0 .4.2.8.5 1l9.4-9.4L3 2.6Z"/><path d="M14.4 12l2.7-2.7-9-5.1c-.2-.1-.4-.2-.6-.2L14.4 12Z" opacity=".85"/><path d="M14.4 12l-6.9 8c.2 0 .4-.1.6-.2l9-5.1-2.7-2.7Z" opacity=".85"/><path d="M17.9 8.5l-2.7 1.5 2.7 1.5 2.5-1.4c.5-.3.5-1 0-1.3l-2.5-1.4Z" opacity=".7"/></svg>
+            <span class="play-text-lines"><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+        <ul class="hero-trust">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>100% Offline Scanning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No Account Needed</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free to Use</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="scan-device">
+          <div class="scan-notch"></div>
+          <div class="scan-screen">
+            <div class="scan-doc">
+              <div class="line"></div><div class="line"></div><div class="line"></div>
+              <div class="line"></div><div class="line"></div><div class="line"></div>
+            </div>
+            <span class="scan-corner tl"></span>
+            <span class="scan-corner tr"></span>
+            <span class="scan-corner bl"></span>
+            <span class="scan-corner br"></span>
+            <span class="scan-beam"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>© 2026 CG Apps Dev • bescan.site</footer>
-<script src='main.js'></script>
+  <!-- Features -->
+  <section id="features" class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Features</p>
+        <h2>Every document tool, in one app</h2>
+        <p>BeScan bundles a complete document toolkit so you never need to juggle multiple scanning apps.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
+          <h3>Document Scanner</h3>
+          <p>Capture crisp, auto-cropped scans of paperwork, receipts and notes in seconds.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h16"/><path d="M17 10l3 2-3 2"/></svg></div>
+          <h3>OCR Text Recognition</h3>
+          <p>Turn scanned pages into selectable, searchable and copyable text instantly.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="12" height="16" rx="2"/><path d="M9 9h9a2 2 0 0 1 2 2v9"/></svg></div>
+          <h3>Image to PDF</h3>
+          <p>Convert any photo or gallery image into a clean, shareable PDF file.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><path d="M6.5 10v4a3 3 0 0 0 3 3h1M17.5 10v4a3 3 0 0 1-3 3h-1"/><rect x="9" y="17" width="6" height="4" rx="1"/></svg></div>
+          <h3>Merge PDF</h3>
+          <p>Combine multiple PDF files into a single, organized document.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M12 8v8"/></svg></div>
+          <h3>Split PDF</h3>
+          <p>Break large PDFs into separate pages or custom page ranges.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div>
+          <h3>Compress PDF</h3>
+          <p>Shrink file sizes for easy sharing without losing readability.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h3M17 4h3v3M20 17v3h-3M7 20H4v-3"/><rect x="9" y="9" width="6" height="6"/></svg></div>
+          <h3>QR Scanner</h3>
+          <p>Read QR codes instantly using your camera, online or offline.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM19 14h2M14 19h2M19 19h2"/></svg></div>
+          <h3>QR Generator</h3>
+          <p>Create custom QR codes for links, text, contacts and more.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 0 1 4 4L7 21l-4 1 1-4Z"/></svg></div>
+          <h3>eSign</h3>
+          <p>Sign PDF documents right on your phone with a personal signature.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M6 8l6-5 6 5M6 16l6 5 6-5"/></svg></div>
+          <h3>Watermark</h3>
+          <p>Stamp text or logo watermarks onto your PDFs to protect ownership.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section id="screenshots">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Preview</p>
+        <h2>See BeScan in action</h2>
+        <p>A quick look at the clean, Material-inspired interface.</p>
+      </div>
+      <div class="screens-row reveal">
+        <figure>
+          <img src="assets/images/screen-scan.svg" width="190" height="392" loading="lazy" alt="BeScan document scanner screen with corner guides framing a page">
+          <figcaption>Document Scanner</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/screen-pdf.svg" width="190" height="392" loading="lazy" alt="BeScan PDF tools screen with merge, split, compress and image to PDF tiles">
+          <figcaption>PDF Tools</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/screen-qr.svg" width="190" height="392" loading="lazy" alt="BeScan QR scanner viewfinder and a generated QR code">
+          <figcaption>QR Scanner &amp; Generator</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/screen-scan.svg" width="190" height="392" loading="lazy" alt="BeScan document scanner screen, alternate preview">
+          <figcaption>Fast Capture</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/screen-pdf.svg" width="190" height="392" loading="lazy" alt="BeScan PDF tools screen, alternate preview">
+          <figcaption>Compress &amp; Share</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why BeScan</p>
+        <h2>Why choose BeScan</h2>
+        <p>Built to be quick, dependable and respectful of your privacy — every time you open it.</p>
+      </div>
+      <div class="value-grid">
+        <div class="value-item reveal">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+          <div><h3>Lightning Fast</h3><p>Optimized capture and processing so scans are ready in an instant.</p></div>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/></svg></div>
+          <div><h3>Privacy First</h3><p>Scanning and edits happen on your device — your files stay yours.</p></div>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 4v16M4 8h16"/></svg></div>
+          <div><h3>All-in-One Toolkit</h3><p>Scanner, OCR, PDF tools, QR tools and eSign in a single app.</p></div>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></div>
+          <div><h3>Simple &amp; Clean</h3><p>A clutter-free, Material-inspired design that stays out of your way.</p></div>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+          <div><h3>Works Offline</h3><p>No internet connection required for core scanning and PDF features.</p></div>
+        </div>
+        <div class="value-item reveal">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14.9-4M20 12a8 8 0 0 1-14.9 4"/><path d="M18 4v4h-4M6 20v-4h4"/></svg></div>
+          <div><h3>Regularly Updated</h3><p>Continuous improvements based on real user feedback.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Security -->
+  <section id="privacy">
+    <div class="container">
+      <div class="privacy-panel reveal">
+        <div>
+          <p class="eyebrow" style="background:rgba(255,255,255,0.16); color:#fff;">Privacy &amp; Security</p>
+          <h2>Your documents. Your device. Your control.</h2>
+          <p>BeScan is designed around a simple rule: your documents belong to you, not to a server.</p>
+          <div class="privacy-actions">
+            <a class="btn btn-outline" href="privacy-policy.html">Read Full Privacy Policy</a>
+          </div>
+        </div>
+        <ul class="privacy-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8ec0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Documents stay on your device</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8ec0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No account required</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8ec0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No document upload to servers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8ec0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Google AdMob advertisements</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8ec0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Secure document processing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Start scanning smarter today</h2>
+      <p>Download BeScan for free and keep every document organized, secure and offline.</p>
+      <a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.cgappsdev.bescan" target="_blank" rel="noopener">Download on Google Play</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="logo-mark" style="width:32px;height:32px;" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 8V5a1 1 0 0 1 1-1h3"/><path d="M20 8V5a1 1 0 0 0-1-1h-3"/><path d="M4 16v3a1 1 0 0 0 1 1h3"/><path d="M20 16v3a1 1 0 0 1-1 1h-3"/></svg>
+          </span>
+          <span>BeScan</span>
+        </div>
+        <p class="footer-desc">A fast, secure and offline document &amp; PDF scanner for Android, built by CG Apps Dev.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-current-year>2026</span> CG Apps Dev. All rights reserved.</span>
+      <span>bescan.support@gmail.com</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top-btn" type="button" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
