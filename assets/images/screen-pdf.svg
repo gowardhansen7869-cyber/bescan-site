@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 620" width="300" height="620" role="img" aria-labelledby="t2 d2">
+  <title id="t2">PDF tools screen</title>
+  <desc id="d2">App screen listing PDF tools such as merge, split and compress with icon tiles</desc>
+  <rect width="300" height="620" rx="34" fill="#0f172a"/>
+  <rect x="6" y="6" width="288" height="608" rx="28" fill="#ffffff"/>
+  <rect x="6" y="6" width="288" height="70" rx="28" fill="#1a56db"/>
+  <rect x="6" y="48" width="288" height="28" fill="#1a56db"/>
+  <text x="28" y="48" font-family="Arial, sans-serif" font-size="19" fill="#ffffff" font-weight="700">PDF Tools</text>
+  <g>
+    <rect x="26" y="100" width="112" height="112" rx="14" fill="#eaf1ff"/>
+    <rect x="50" y="128" width="64" height="56" rx="6" fill="#1a56db"/>
+    <text x="82" y="196" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle">Merge PDF</text>
+  </g>
+  <g>
+    <rect x="162" y="100" width="112" height="112" rx="14" fill="#eaf1ff"/>
+    <rect x="186" y="128" width="64" height="56" rx="6" fill="#3b82f6"/>
+    <text x="218" y="196" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle">Split PDF</text>
+  </g>
+  <g>
+    <rect x="26" y="228" width="112" height="112" rx="14" fill="#eaf1ff"/>
+    <rect x="50" y="256" width="64" height="56" rx="6" fill="#1a56db"/>
+    <text x="82" y="324" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle">Compress</text>
+  </g>
+  <g>
+    <rect x="162" y="228" width="112" height="112" rx="14" fill="#eaf1ff"/>
+    <rect x="186" y="256" width="64" height="56" rx="6" fill="#3b82f6"/>
+    <text x="218" y="324" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle">Image to PDF</text>
+  </g>
+  <rect x="26" y="356" width="248" height="88" rx="12" fill="#f1f6ff" stroke="#c7d9fb" stroke-width="2"/>
+  <rect x="44" y="374" width="140" height="12" rx="3" fill="#dbe6fd"/>
+  <rect x="44" y="396" width="90" height="10" rx="3" fill="#e7eefe"/>
+  <rect x="230" y="374" width="26" height="26" rx="6" fill="#1a56db"/>
+</svg>

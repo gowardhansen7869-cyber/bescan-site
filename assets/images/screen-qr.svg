@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 620" width="300" height="620" role="img" aria-labelledby="t3 d3">
+  <title id="t3">QR scanner screen</title>
+  <desc id="d3">App screen showing a QR code scanning viewfinder and a generated QR code</desc>
+  <rect width="300" height="620" rx="34" fill="#0f172a"/>
+  <rect x="6" y="6" width="288" height="608" rx="28" fill="#eaf1ff"/>
+  <rect x="6" y="6" width="288" height="70" rx="28" fill="#1a56db"/>
+  <rect x="6" y="48" width="288" height="28" fill="#1a56db"/>
+  <text x="28" y="48" font-family="Arial, sans-serif" font-size="19" fill="#ffffff" font-weight="700">QR Scanner</text>
+  <rect x="46" y="106" width="208" height="208" rx="12" fill="#0f172a"/>
+  <path d="M60 130 L60 116 L74 116" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M240 130 L240 116 L226 116" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M60 290 L60 304 L74 304" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M240 290 L240 304 L226 304" stroke="#3b82f6" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <rect x="60" y="206" width="180" height="4" fill="#3b82f6"/>
+  <rect x="26" y="340" width="248" height="180" rx="12" fill="#ffffff" stroke="#c7d9fb" stroke-width="2"/>
+  <text x="150" y="366" font-family="Arial, sans-serif" font-size="13" fill="#1e3a8a" text-anchor="middle" font-weight="700">Your QR Code</text>
+  <g fill="#0f172a">
+    <rect x="88" y="384" width="14" height="14"/><rect x="112" y="384" width="14" height="14"/><rect x="150" y="384" width="14" height="14"/><rect x="188" y="384" width="14" height="14"/>
+    <rect x="88" y="408" width="14" height="14"/><rect x="150" y="408" width="14" height="14"/><rect x="174" y="408" width="14" height="14"/>
+    <rect x="112" y="432" width="14" height="14"/><rect x="150" y="432" width="14" height="14"/><rect x="188" y="432" width="14" height="14"/>
+    <rect x="88" y="456" width="14" height="14"/><rect x="126" y="456" width="14" height="14"/><rect x="174" y="456" width="14" height="14"/>
+  </g>
+  <rect x="86" y="382" width="42" height="42" fill="none" stroke="#0f172a" stroke-width="4"/>
+  <rect x="172" y="382" width="42" height="42" fill="none" stroke="#0f172a" stroke-width="4"/>
+  <rect x="86" y="466" width="42" height="42" fill="none" stroke="#0f172a" stroke-width="4"/>
+</svg>

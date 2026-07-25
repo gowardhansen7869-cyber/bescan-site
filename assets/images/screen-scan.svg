@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 620" width="300" height="620" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Document scanner screen</title>
+  <desc id="d1">App screen showing a document being captured with corner guides and a shutter button</desc>
+  <rect width="300" height="620" rx="34" fill="#0f172a"/>
+  <rect x="6" y="6" width="288" height="608" rx="28" fill="#eaf1ff"/>
+  <rect x="6" y="6" width="288" height="70" rx="28" fill="#1a56db"/>
+  <rect x="6" y="48" width="288" height="28" fill="#1a56db"/>
+  <text x="28" y="48" font-family="Arial, sans-serif" font-size="19" fill="#ffffff" font-weight="700">Scan Document</text>
+  <rect x="26" y="100" width="248" height="360" rx="12" fill="#ffffff" stroke="#c7d9fb" stroke-width="2"/>
+  <rect x="46" y="126" width="208" height="14" rx="3" fill="#dbe6fd"/>
+  <rect x="46" y="150" width="180" height="10" rx="3" fill="#e7eefe"/>
+  <rect x="46" y="170" width="208" height="10" rx="3" fill="#e7eefe"/>
+  <rect x="46" y="190" width="150" height="10" rx="3" fill="#e7eefe"/>
+  <rect x="46" y="230" width="208" height="120" rx="6" fill="#f1f6ff"/>
+  <path d="M40 108 L40 122 L54 122" stroke="#1a56db" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M260 108 L260 122 L246 122" stroke="#1a56db" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M40 452 L40 438 L54 438" stroke="#1a56db" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M260 452 L260 438 L246 438" stroke="#1a56db" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="150" cy="520" r="34" fill="#1a56db"/>
+  <circle cx="150" cy="520" r="34" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="150" cy="520" r="22" fill="#ffffff"/>
+  <rect x="120" y="490" width="14" height="14" rx="3" fill="#c7d9fb"/>
+  <rect x="166" y="490" width="14" height="14" rx="3" fill="#c7d9fb"/>
+</svg>

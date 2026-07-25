@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="BeScan logo">
+  <rect width="64" height="64" rx="14" fill="#1a56db"/>
+  <path d="M16 22V16a2 2 0 0 1 2-2h6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M48 22V16a2 2 0 0 0-2-2h-6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M16 42v6a2 2 0 0 0 2 2h6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M48 42v6a2 2 0 0 1-2 2h-6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <rect x="20" y="27" width="24" height="3" rx="1.5" fill="#8ec0ff"/>
+  <rect x="20" y="34" width="17" height="3" rx="1.5" fill="#ffffff"/>
+</svg>
