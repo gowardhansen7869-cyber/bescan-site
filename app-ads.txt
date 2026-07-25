@@ -1,1 +1,1 @@
-# Paste your Google AdMob app-ads.txt line here after approval.
+google.com, pub-1416633024768109, DIRECT, f08c47fec0942fa0
